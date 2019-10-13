@@ -3,4 +3,6 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="kata">Tekanan sistolik adalah tekanan darah pada saat terjadi kontraksi otot jantung.Tekanan sistolik merupakan angka pertama. Sebagai contoh, tekanan darah pada angka 120/80 menunjukkan tekanan sistolik pada nilai 120 mmHg.
+                        Tekanan diastolik adalah tekanan darah pada saat jantung sedang berelaksasi atau beristirahat. Pada kurva denyut jantung, tekanan diastolik adalah tekanan darah yangdigambarkan pada rentang di antara grafik denyut jantung.</string>
 </resources>
