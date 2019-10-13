@@ -20,5 +20,4 @@ public class Tensiku{
         }
         return Integer.parseInt(tekanan);
     }
-
 }

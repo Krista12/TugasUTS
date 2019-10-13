@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity implements MenuFragment.OnFr
     @Override
     public void onCekDisiniButtonClicked() {
         getSupportFragmentManager().beginTransaction()
-                .replace(R.id.fragment_layout,tensiFragment)
+                .replace(R.id.fragment_layout, tensiFragment)
                 .commit();
 
     }
