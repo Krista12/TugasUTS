@@ -61,15 +61,15 @@ public class MainActivity extends AppCompatActivity implements MenuFragment.OnFr
     }
 
     @Override
-    public void onCekTensiButtonClicked(int tekanan) {
-        resultFragment.setInformation(String.format("Your Tensi : " + tekanan ));
+    public void onCekTensiButtonClicked(String tekanan) {
+        resultFragment.setInformation(String.format("Tensi : %s", tekanan));
         getSupportFragmentManager().beginTransaction()
-                .replace(R.id.fragment_layout, tensiFragment)
+                .replace(R.id.fragment_layout, resultFragment)
                 .commit();
     }
 
     @Override
-    public void onTryAgainButtonClicked(String tag) {
+    public void onTryAgainButtonClicked() {
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.fragment_layout, tensiFragment)
                 .commit();

@@ -43,7 +43,7 @@ public class ResultFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 if (mListener != null) {
-                    mListener.onTryAgainButtonClicked("Tensi");
+                    mListener.onTryAgainButtonClicked();
                 }
             }
         });
@@ -83,7 +83,7 @@ public class ResultFragment extends Fragment {
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
       //  void onFragmentInteraction(Uri uri);
-        void onTryAgainButtonClicked(String tag);
+        void onTryAgainButtonClicked();
     }
 
     public void setInformation(String information) {

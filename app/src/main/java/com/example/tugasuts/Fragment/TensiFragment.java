@@ -53,7 +53,7 @@ public class TensiFragment extends Fragment {
                         Tensiku tensiku = new Tensiku(sistol, diastol);
                         mListener.onCekTensiButtonClicked(tensiku.Tekanan());
                     } else  {
-                        Toast.makeText(getActivity(), "Please Input Your Height and Weight", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getActivity(), "Please Input Your Sistol and Diastol", Toast.LENGTH_SHORT).show();
                     }
                 }
 
@@ -95,6 +95,6 @@ public class TensiFragment extends Fragment {
         // TODO: Update argument type and name
        // void onFragmentInteraction(Uri uri);
 
-        void onCekTensiButtonClicked(int i);
+        void onCekTensiButtonClicked(String i);
     }
 }
