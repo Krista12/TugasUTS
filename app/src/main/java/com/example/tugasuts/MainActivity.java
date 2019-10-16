@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity implements MenuFragment.OnFr
 
     @Override
     public void onCekTensiButtonClicked(String tekanan) {
-        resultFragment.setInformation(String.format("Tensi : %s", tekanan));
+        resultFragment.setInformation(String.format("Hasil : %s", tekanan));
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.fragment_layout, resultFragment)
                 .commit();
@@ -70,6 +70,7 @@ public class MainActivity extends AppCompatActivity implements MenuFragment.OnFr
 
     @Override
     public void onTryAgainButtonClicked() {
+
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.fragment_layout, tensiFragment)
                 .commit();

@@ -9,35 +9,22 @@
     tools:context=".Fragment.TensiFragment">
 
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="354dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="120dp"
-        android:text="SELAMAT DATANG DI TENSIKU"
-        android:textColor="@android:color/white"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.719"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
         android:id="@+id/textView5"
         android:layout_width="203dp"
         android:layout_height="38dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="16dp"
         android:text="Ayo Cek Sekarang"
         android:textColor="@android:color/white"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="214dp"
         android:layout_height="32dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="16dp"
         android:text="SISTOL (Tensi Atas)"
         android:textColor="@android:color/white"
         android:textSize="18sp"
@@ -48,8 +35,8 @@
 
     <EditText
         android:id="@+id/editText"
-        android:layout_width="260dp"
-        android:layout_height="63dp"
+        android:layout_width="262dp"
+        android:layout_height="48dp"
         android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="Masukkan Tensi Atas (SISTOL)"
@@ -76,8 +63,8 @@
 
     <EditText
         android:id="@+id/editText2"
-        android:layout_width="294dp"
-        android:layout_height="54dp"
+        android:layout_width="292dp"
+        android:layout_height="48dp"
         android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="Masukkan Tensi Bawah (DIASTOL)"
@@ -91,16 +78,27 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="154dp"
-        android:layout_height="53dp"
-        android:layout_marginTop="28dp"
+        android:layout_width="138dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="16dp"
         android:background="@android:color/black"
         android:text="CEK TENSI"
         android:textColor="@android:color/white"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.45"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:src="@drawable/cek"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
