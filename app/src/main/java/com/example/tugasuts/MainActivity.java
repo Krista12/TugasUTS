@@ -56,6 +56,7 @@ public class MainActivity extends AppCompatActivity implements MenuFragment.OnFr
     public void onCekDisiniButtonClicked() {
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.fragment_layout, tensiFragment)
+                .addToBackStack(null)
                 .commit();
 
     }
@@ -70,7 +71,6 @@ public class MainActivity extends AppCompatActivity implements MenuFragment.OnFr
 
     @Override
     public void onTryAgainButtonClicked() {
-
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.fragment_layout, tensiFragment)
                 .commit();

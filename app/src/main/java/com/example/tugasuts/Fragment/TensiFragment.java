@@ -40,6 +40,8 @@ public class TensiFragment extends Fragment {
         final EditText sistolText = view.findViewById(R.id.editText);
         final EditText diastolText = view.findViewById(R.id.editText2);
 
+
+
         Button cektensiButton = view.findViewById(R.id.button2);
         cektensiButton.setOnClickListener(new View.OnClickListener() {
             @Override
