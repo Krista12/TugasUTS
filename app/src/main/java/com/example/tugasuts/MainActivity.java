@@ -3,6 +3,7 @@ package com.example.tugasuts;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 import android.view.Menu;
@@ -44,7 +45,8 @@ public class MainActivity extends AppCompatActivity implements MenuFragment.OnFr
     @Override
     public boolean onOptionsItemSelected( MenuItem item) {
         if (item.getItemId() == R.id.menu_about){
-            getSupportFragmentManager().beginTransaction()
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
                     .replace(R.id.fragment_layout, aboutFragment)
                     .addToBackStack(null)
                     .commit();
@@ -54,7 +56,8 @@ public class MainActivity extends AppCompatActivity implements MenuFragment.OnFr
 
     @Override
     public void onCekDisiniButtonClicked() {
-        getSupportFragmentManager().beginTransaction()
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
                 .replace(R.id.fragment_layout, tensiFragment)
                 .addToBackStack(null)
                 .commit();
@@ -64,14 +67,17 @@ public class MainActivity extends AppCompatActivity implements MenuFragment.OnFr
     @Override
     public void onCekTensiButtonClicked(String tekanan) {
         resultFragment.setInformation(String.format("Hasil : %s", tekanan));
-        getSupportFragmentManager().beginTransaction()
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
                 .replace(R.id.fragment_layout, resultFragment)
                 .commit();
     }
 
     @Override
     public void onTryAgainButtonClicked() {
-        getSupportFragmentManager().beginTransaction()
+        getSupportFragmentManager().beginTransaction();
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
                 .replace(R.id.fragment_layout, tensiFragment)
                 .commit();
 
