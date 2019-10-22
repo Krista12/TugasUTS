@@ -3,6 +3,6 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="kata">Sistol adalah Tekanan Darah Atas. Sedangkan Diastol adalah Tekanan Darah Bawah.
-                        Ingin tahu tensi kamu tinggi, normal atau rendah? Langsung saja yuk cek.</string>
+    <string name="kata"> Aplikasi ini di buat oleh Krista Bella Dwi RNW berguna untuk cek tinggi atau rendahnya
+        Tekanan darah seseorang.</string>
 </resources>
