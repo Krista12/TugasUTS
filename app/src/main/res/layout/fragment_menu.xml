@@ -35,8 +35,8 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="162dp"
-        android:layout_height="48dp"
+        android:layout_width="146dp"
+        android:layout_height="59dp"
         android:background="@android:color/holo_red_dark"
         android:text="CEK DISINI"
         android:textColor="@android:color/background_light"
